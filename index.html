@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b39a64d43.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body class="sora">
+    <header class="bg-[#FFF9F4]">
+                                               <!--***** Navbar***** -->
+
+        <div class="pet-navbar  max-w-[1560px] mx-auto ">
+            <div class="navbar flex justify-between items-center w-full py-5 bg-[#FFF9F4] bg-base-100">
+                
+                <!-- navbar logo -->
+                <div class="pet-nav-logo">
+                  <a class="btn btn-ghost text-xl lg:text-2xl"><img src="./assets/logo-header.png" alt=""><h1 class="hidden md:inline-block">Browse<span class="text-pet">4</span>Pets</h1></a>
+                </div>
+
+
+                <!-- navbar menu texts -->
+                <div class="navbar-center lg:flex-1 hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 mx-auto">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                
+                <!-- navbar buttons -->
+                <div class="navbar-end w-auto hidden lg:flex">
+                  <a class="btn bg-transparent border-0 shadow-none px-0 hover:bg-transparent"><img src="./assets/bell.png" alt=""></a>
+                  <a class="btn bg-transparent border-0 shadow-none hover:bg-transparent"><img src="./assets/search.png" alt=""></a>
+                  <a class="btn mr-2 bg-transparent border-yellow-400">Login</a>
+                  <a class="btn bg-pet">Register</a>
+                </div>
+
+                <!-- navbar mobile dropdown -->
+                <div class="navbar-start w-auto">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu relative right-1 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                        <li><a>Notification</a></li>
+                        <li><a>Search</a></li>
+                        <li><a class="btn mr-2 bg-transparent border-yellow-400 mt-2 w-40">Login</a></li>
+                        <li><a class="btn bg-pet mt-2 w-40">Register</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div> 
+        </div>
+        <hr class="border-2 lg:hidden">                        
+    </header>
+    <main class="max-w-[1560px] mx-auto"></main>
     <footer></footer>
 </body>
 </html>
